@@ -67,7 +67,7 @@ export class SlideMenu implements AfterViewInit {
     ngAfterViewInit() {
 
     }
-    private menuToggle() {
+    public menuToggle() {
         this.menuState = !this.menuState;
         this.toggleOverlay();
         if (this.menuState) {
@@ -77,12 +77,12 @@ export class SlideMenu implements AfterViewInit {
             this.close.emit();
         }
     }
-    private closeMenu() {
+    public closeMenu() {
         this.menuState = false;
         this.overlayElem.style['opacity'] = 0;
     }
     currentItem:any;
-    private onItemClick(item: any) {
+    public onItemClick(item: any) {
         if(this.currentItem){
             this.currentItem.active = this.currentItem.active ? false : true;
             
@@ -103,7 +103,7 @@ export class SlideMenu implements AfterViewInit {
 
 
     }
-    private toggleSubMenu(item: any) {
+    public toggleSubMenu(item: any) {
         if (item.expand) {
             item.expand = item.expand == 'hide' ? 'show' : 'hide';
         }
