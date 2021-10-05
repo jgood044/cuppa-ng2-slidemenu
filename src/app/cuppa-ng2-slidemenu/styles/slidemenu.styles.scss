@@ -46,11 +46,11 @@ $transition-type: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transition: all .3s linear;
 }
 .cuppa-menu ul > li > a:hover{
-    background: #007bff !important;
+    background: #007bff;
     color: #fff;
 }
 .cuppa-menu ul > li > a.active {
-    background: #007bff !important;
+    background: #007bff;
     color: #fff;
 }
 .cuppa-menu ul > li > a > i{
